@@ -18,6 +18,11 @@
 article {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: grid;
+  gap: 2rem;
 }
 @media (width > 50rem) {
   .container {
@@ -26,4 +31,29 @@ article {
     grid-template-columns: repeat(3, 1fr);
     margin: 1rem 0.3rem;
   }
+}
+.bg-purple-500 {
+  background-color: var(--Purple-500);
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+}
+.bg-white {
+  background-color: var(--White);
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+}
+.bg-yellow-500 {
+  background-color: var(--Yellow-500);
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+}
+.bg-purple-100 {
+  background-color: var(--Purple-100);
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+}
+.bg-yellow-100 {
+  background-color: var(--Yellow-100);
+  padding: 1rem 4rem;
+  overflow-x: hidden;
 }
