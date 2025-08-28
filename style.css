@@ -13,16 +13,56 @@
 
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 7%);
-  --Family: "DM Sans" sans-serif;
+  --Family: "DM Sans";
+}
+body {
+  font-family: var(--Family);
 }
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+img {
+  width: 150px;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  text-wrap: balance;
+}
+.color-yellow-500 {
+  color: var(--Yellow-500);
+}
+.color-white {
+  color: var(--White);
+  font-weight: 200;
+}
+.color-purple-500 {
+  color: var(--Purple-500);
+}
+.color-black {
+  color: var(--Black);
+}
 .container {
   display: grid;
   gap: 2rem;
+}
+.create-post-section {
+  display: grid;
+}
+.create-post-section .text-content {
+  font-size: 45px;
+  text-wrap: balance;
+}
+.charts img {
+  width: 200px;
+}
+.charts {
+  gap: 1rem;
+}
+.charts h2 {
+  text-wrap: balance;
 }
 @media (width > 50rem) {
   .container {
@@ -54,26 +94,22 @@ article {
 
 .bg-purple-500 {
   background-color: var(--Purple-500);
-  padding: 1rem 4rem;
-  overflow-x: hidden;
+  padding: 0.6rem 0.9rem;
 }
 .bg-white {
   background-color: var(--White);
-  padding: 1rem 4rem;
-  overflow-x: hidden;
+  padding: 0.6rem 0.9rem;
 }
 .bg-yellow-500 {
   background-color: var(--Yellow-500);
-  padding: 1rem 4rem;
-  overflow-x: hidden;
+
+  padding: 0.6rem 0.9rem;
 }
 .bg-purple-100 {
   background-color: var(--Purple-100);
-  padding: 1rem 4rem;
-  overflow-x: hidden;
+  padding: 0.6rem 0.9rem;
 }
 .bg-yellow-100 {
   background-color: var(--Yellow-100);
-  padding: 1rem 4rem;
-  overflow-x: hidden;
+  padding: 0.6rem 0.9rem;
 }
