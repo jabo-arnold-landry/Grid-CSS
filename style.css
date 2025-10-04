@@ -1,5 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+:root {
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+  --Family: "DM Sans";
+}
+body {
+  font-family: var(--Family);
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  text-wrap: balance;
+}
+.color-yellow-500 {
+  color: var(--Yellow-500);
+}
+.color-white {
+  color: var(--White);
+  font-weight: 200;
+}
+.color-purple-500 {
+  color: var(--Purple-500);
+}
+.color-black {
+  color: var(--Black);
+}
+.container {
+  display: grid;
+  gap: 2rem;
+}
+.create-post-section {
+  display: grid;
+}
+.create-post-section .text-content {
+  font-size: 45px;
+  text-wrap: balance;
+}
+
+.charts h2 {
+  text-wrap: balance;
+}
+.charts p {
+  text-wrap: pretty;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (width > 50rem) {
+  .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0.3rem;
+  }
+  .grid-column-2 {
+    grid-column: 2 / span 2;
+    justify-self: center;
+  }
+  .grid-row-1 {
+    grid-row: 1;
+  }
+  .charts {
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+  }
+  .grid-row-3 {
+    grid-row: 2 / span 2;
+  }
+  .grid-column-3 {
+    grid-column: 3 / span 2;
+  }
+  .grid-row-end-4 {
+    grid-column-start: 2;
+    grid-row-end: 4;
+  }
+}
+
+.bg-purple-500 {
+  background-color: var(--Purple-500);
+  padding: 0.6rem 0.9rem;
+}
+.bg-white {
+  background-color: var(--White);
+  padding: 0.6rem 0.9rem;
+}
+.bg-yellow-500 {
+  background-color: var(--Yellow-500);
+
+  padding: 0.6rem 0.9rem;
+}
+.bg-purple-100 {
+  background-color: var(--Purple-100);
+  padding: 0.6rem 0.9rem;
+}
+.bg-yellow-100 {
+  background-color: var(--Yellow-100);
+  padding: 0.6rem 0.9rem;
 }
